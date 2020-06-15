@@ -145,13 +145,7 @@ FLUSH PRIVILEGES;
 exit
 ```
 
-
-SELECT user,plugin,host FROM mysql.user WHERE user = 'root';
-SET PASSWORD FOR 'root'@'localhost' = PASSWORD('MyNewPass'); 
-FLUSH PRIVILEGES;  
-exit
-
-### Step20: Login to phpmyadmin
+### Step21: Login to phpmyadmin
 
 ```
 http://192.168.1.106/phpmyadmin  # replace 192.168.1.106 with your ip address
