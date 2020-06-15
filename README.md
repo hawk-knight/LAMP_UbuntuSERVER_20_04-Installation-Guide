@@ -1,5 +1,5 @@
 # LAMP_UbuntuSERVER_20_04-Installation-Guide
-# How to install LAMP Server with Ubutu 20.04LTS
+# How to install Apache MariaDB php and phpmyadmin Server on Ubutu Server 20.04LTS
 
 ## By Tawan Phurat 15 June 2020
 
