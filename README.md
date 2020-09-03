@@ -150,3 +150,9 @@ exit
 ```
 http://192.168.1.106/phpmyadmin  # replace 192.168.1.106 with your ip address
 ```
+
+
+### NAT access Internet via enp5s0  from enp9s0  
+
+iptables --table nat --append POSTROUTING --out-interface enp5s0 -j MASQUERADE
+iptables --append FORWARD --in-interface enp9s0 -j ACCEPT
