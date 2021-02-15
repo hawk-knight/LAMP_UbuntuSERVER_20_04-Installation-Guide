@@ -13,6 +13,12 @@
  sudo apt-get update
 ```
 
+### Step1.1: install net-tools (for ifconfig command)
+
+```
+sudo  apt-get install net-tools
+```` 
+
 ### Step2: Install Apache2
 
 ```
