@@ -164,3 +164,21 @@ http://192.168.1.106/phpmyadmin  # replace 192.168.1.106 with your ip address
 iptables --table nat --append POSTROUTING --out-interface enp5s0 -j MASQUERADE
 iptables --append FORWARD --in-interface enp9s0 -j ACCEPT
 ```
+### install webmin
+
+sudo nano /etc/apt/sources.list
+
+
+add this line 
+```
+deb http://download.webmin.com/download/repository sarge contrib
+```
+
+download the Webmin PGP key
+```
+wget -q -O- http://www.webmin.com/jcameron-key.asc | sudo apt-key add
+```
+
+sudo apt update
+sudo apt install webmin
+
