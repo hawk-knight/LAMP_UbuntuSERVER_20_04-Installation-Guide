@@ -158,12 +158,22 @@ http://192.168.1.106/phpmyadmin  # replace 192.168.1.106 with your ip address
 ```
 
 
-### NAT access Internet via enp5s0  from enp9s0  
+### NAT access Internet via enp0s3(Virtualbox NAT)  from enp0s8(Virtualbox Bridge)   
 
 ```
-iptables --table nat --append POSTROUTING --out-interface enp5s0 -j MASQUERADE
-iptables --append FORWARD --in-interface enp9s0 -j ACCEPT
+iptables --table nat --append POSTROUTING --out-interface enp0s3 -j MASQUERADE
+iptables --append FORWARD --in-interface enp0s8 -j ACCEPT
 ```
+
+edit firwall rule 
+```
+sudo nano /etc/sysctl.conf
+```
+uncomment the line 
+```
+net.ipv4.ip_forward=1
+```
+
 ### install webmin
 
 ```
