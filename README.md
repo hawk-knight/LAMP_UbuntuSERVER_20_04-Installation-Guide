@@ -1,5 +1,5 @@
 # LAMP_UbuntuSERVER_20_04-Installation-Guide
-# How to install Apache MariaDB php and phpmyadmin Server on Ubutu Server 20.04LTS
+# How to install Apache MariaDB php and phpmyadmin Server on Ubutu Server 20.04LTSCancel Changes
 
 ## By Tawan Phurat 15 June 2020
 
@@ -194,3 +194,6 @@ wget -q -O- http://www.webmin.com/jcameron-key.asc | sudo apt-key add
 sudo apt update
 sudo apt install webmin
 ```
+
+### install MQTT server
+Bl0I786LtxJTxGjUkiFOr3XbiuMCxwwFI4QHPn6ZQzU
