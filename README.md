@@ -195,5 +195,16 @@ sudo apt update
 sudo apt install webmin
 ```
 
+### config webmin for mariadb
+
+goto webmin --> Unused Moduled --> MySQL Database Server  --> module config --> System configuration
+
+change MySQL configuration file	from   '/etc/mysql/mysql.cnf' to '/etc/mysql/mariadb.cnf'
+
+save and refresh unused module
+
+
+
+
 ### install MQTT server
 Bl0I786LtxJTxGjUkiFOr3XbiuMCxwwFI4QHPn6ZQzU
