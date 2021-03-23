@@ -86,43 +86,47 @@ mysql -u root -p
 sudo mysql -u root
 ```
 
-### Step12: Install php
+### Step12: config database lissen on any address
+
+
+
+### Step13: Install php
 
 ```
 sudo apt-get install php libapache2-mod-php php-mysql
 ```
 
-### Step13: check path of php
+### Step14: check path of php
 
 ```
 sudo apt-cache search php | grep php-	#show all php packages
 ```
 
-### Step14: Install other module from Redis
+### Step15: Install other module from Redis
 
 ```
 sudo apt install php-redis php-zip
 ```
 
-### Step15: Restart apache2
+### Step16: Restart apache2
 
 ```
 sudo systemctl restart apache2
 ```
 
-### Step16: create info.php file
+### Step17: create info.php file
 
 ```
 echo "<?php phpinfo(); ?>" | sudo tee /var/www/html/info.php
 ```
 
-### Step17: test php on web
+### Step18: test php on web
 
 ```
 http://192.168.1.106/info.php      # replace 192.168.1.106 with your ip address
 ```
 
-#### Step18: Install phpmyadmin
+#### Step19: Install phpmyadmin
 
 ```
 sudo apt-get install phpmyadmin
@@ -132,7 +136,7 @@ sudo apt-get install phpmyadmin
 #Type password for root 2 times
 ```
 
-### Step19: config phpmyadmin system
+### Step20: config phpmyadmin system
 
 ```
 sudo a2enconf phpmyadmin.conf  
@@ -140,7 +144,7 @@ sudo a2enconf phpmyadmin.conf
 sudo systemctl reload apache2.service  
 ```
 
-### Step20: config password for phpmyadmin
+### Step21: config password for phpmyadmin
 
 ```
 sudo mysql -u root
@@ -151,7 +155,7 @@ FLUSH PRIVILEGES;
 exit
 ```
 
-### Step21: Login to phpmyadmin
+### Step22: Login to phpmyadmin
 
 ```
 http://192.168.1.106/phpmyadmin  # replace 192.168.1.106 with your ip address
@@ -196,6 +200,10 @@ sudo apt install webmin
 ```
 
 ### config webmin for mariadb
+
+```
+bind 0.0.0.0
+```
 
 #### goto webmin --> Unused Moduled --> MySQL Database Server  --> module config --> System configuration
 
