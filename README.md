@@ -197,9 +197,11 @@ sudo apt install webmin
 
 ### config webmin for mariadb
 
-goto webmin --> Unused Moduled --> MySQL Database Server  --> module config --> System configuration
+#### goto webmin --> Unused Moduled --> MySQL Database Server  --> module config --> System configuration
 
 change MySQL configuration file	from   '/etc/mysql/mysql.cnf' to '/etc/mysql/mariadb.cnf'
+
+#### enter root password  for mariadb 
 
 save and refresh unused module
 
